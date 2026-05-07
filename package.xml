@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>tecmp_can_interface</name>
+  <version>0.1.0</version>
+  <description>Sniff TECMP Ethernet packages (as provided by Technicas CAN Modules) and send them to virtual socketcan interfaces.</description>
+  <maintainer email="georg.beierlein@tu-dresden.de">Georg Beierlein</maintainer>
+  <license>LGPLv3</license>
+
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <!-- <depend>rclcpp</depend> -->
+
+  <depend>libtecmp</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
